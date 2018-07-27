@@ -223,6 +223,66 @@ nav .rightNav li:last-child {
 }
 
 .feature .blurb {
-  color: #999;
+  color: #666;
   font-size: 1rem;
 }
+
+/* contentBlock section */
+
+.contact .wrapper {
+  padding: 0;
+  max-width: none;
+}
+.contact .contentBlockContainer {
+  width: 50%;
+  float: left;
+  position: relative;
+}
+.contact .contentBlockContainer::after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+
+.contact .contentBlockContainer.left {
+  background-color: #c3dab7;
+}
+.contact .contentBlockContainer.right {
+  background: dodgerblue url(../images/home-10.jpeg) no-repeat center;
+  background-size: cover;
+}
+
+.contact .contentBlock {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  width: 65%;
+  text-align: center;
+}
+
+.contact .title {
+  font-size: 1.8rem;
+  margin-bottom: 50px;
+}
+
+.contact .blurb {
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.contact .cta {
+  text-transform: uppercase;
+  border: none;
+  background-color: #fff;
+  padding: 15px 20px;
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+} 
