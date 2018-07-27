@@ -62,6 +62,10 @@ header {
   background-size: cover;
 }
 
+nav a {
+  color: #000;
+}
+
 nav.wrapper {
   padding: 4rem;
   font-family: 'Montserrat', sans-serif; 
@@ -286,3 +290,61 @@ nav .rightNav li:last-child {
   letter-spacing: 1px;
   cursor: pointer;
 } 
+
+/* Footer Section */
+footer {
+  background-color: #333;
+}
+.footerTop {
+  color: #fff;
+  border-bottom: 2px solid #666;
+}
+.footerItems {
+  width: calc(100% / 3);
+  float: left;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.footerItems .title {
+  margin-bottom: 40px;
+}
+
+.footerItems.center .title {
+  text-align: center;
+}
+
+.footerItems.center ul {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.footerItems.center li::before {
+  content: '\2022';
+  margin-right: 5px;
+  font-size: 1rem;
+}
+
+.footerItems.right {
+  margin-right: 0;
+  text-align: right;
+}
+
+.footerItems.right .blurb {
+  margin-bottom: 20px;
+}
+
+.footerItems .shareIcons i {
+  float: left;
+  margin: 20px 20px 0 0;
+  font-size: 1.5rem;
+  color: #fff
+}
+
+.footerBottom .title  {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 60px 0;
+  font-size: 1.4rem;
+  letter-spacing: 7px;
+}
