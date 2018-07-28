@@ -237,6 +237,26 @@ nav .rightNav li:last-child {
 }
 
 /* Team Section */
+
+.team {
+  position: relative;
+  overflow: hidden;
+}
+
+.team::before {
+  content:'';
+  background-color: #999;
+  width: 150px;
+  height: 1px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(90deg);
+  -webkit-transform: translateX(-50%) rotate(90deg);
+  -moz-transform: translateX(-50%) rotate(90deg);
+  -ms-transform: translateX(-50%) rotate(90deg);
+  -o-transform: translateX(-50%) rotate(90deg);
+}
 .team .sectionHeading {
   margin-bottom: 90px;
 }
