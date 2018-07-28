@@ -30,9 +30,14 @@ img {
 }
 
 .wrapper {
-  max-width: 1200px;
+  max-width: 1080px;
   margin: 0 auto;
   padding: 14rem 0 10rem;
+}
+
+.sectionHeading {
+  font-size: 1.8rem;
+  text-align: center;
 }
 
 .content {
@@ -231,7 +236,70 @@ nav .rightNav li:last-child {
   font-size: 1rem;
 }
 
-/* contentBlock section */
+/* Team Section */
+.team .sectionHeading {
+  margin-bottom: 90px;
+}
+.team .row {
+  margin-bottom: 2.5rem;
+}
+.team .tile {
+  width: calc(25% - 2.5rem);
+  float: left;
+  margin-right: 2.5rem;
+  position: relative;
+}
+
+.team .row .tile:last-child {
+  margin-right: 0;
+}
+
+.team .tile.textOnly::after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+
+.team .tile.largeTile {
+  width: calc(50% - 2.5rem);
+  background-color: #f6f6f6;
+}
+
+.team .tile.largeTile::after {
+  content: '';
+  display: block;
+  padding-bottom: 47.6%;
+}
+
+.team .tile.largeTile .contentBlock {
+  width: 85%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.team .tile.textOnly .title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  font-size: 1.5rem;
+  color: #666;
+  line-height: 1.5;
+  text-align: center;
+  width: 70%;
+}
+
+/* Contact section */
 
 .contact .wrapper {
   padding: 0;
@@ -270,7 +338,6 @@ nav .rightNav li:last-child {
 }
 
 .contact .title {
-  font-size: 1.8rem;
   margin-bottom: 50px;
 }
 
