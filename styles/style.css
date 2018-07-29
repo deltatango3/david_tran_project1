@@ -32,7 +32,14 @@ img {
 .wrapper {
   max-width: 1080px;
   margin: 0 auto;
-  padding: 14rem 0 10rem;
+  padding: 14rem 1rem 10rem;
+}
+
+.heroHeading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .sectionHeading {
@@ -379,6 +386,39 @@ nav .rightNav li:last-child {
   cursor: pointer;
 } 
 
+/* Contact PAGE */
+
+.pageContact header {
+  background: #fff;
+  min-height: 0;
+  height: 100%;
+}
+
+.pageContact .hero {
+  background: #e6e6e6 url(../images/contact-1.jpeg) no-repeat;
+  background-size: cover;
+  height: 35vh;
+  min-height: 100px;
+  position: relative;
+}
+
+.hero .wrapper {
+  padding: 0;
+}
+
+.pageContact .hero .heroHeading {
+  position: absolute;
+  bottom: -30px;
+}
+
+.pageContact .hero .heroHeading::before {
+  content: '';
+  background-color: #000;
+  width: 28px;
+  height: 3px;
+  position: absolute;
+  top: -50px;
+}
 /* Footer Section */
 footer {
   background-color: #333;
@@ -476,3 +516,4 @@ footer {
   font-size: 1.4rem;
   letter-spacing: 7px;
 }
+
