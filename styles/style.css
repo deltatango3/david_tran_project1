@@ -27,6 +27,7 @@ body {
 
 img {
   width: 100%;
+  display: block;
 }
 
 .wrapper {
@@ -67,6 +68,13 @@ img {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.2rem;
   line-height: 1.8;
+}
+
+.shareIcons i {
+  float: left;
+  font-size: 1.5rem;
+  margin-right: 20px;
+  color: #000;
 }
 /* GENERAL END */
 
@@ -468,16 +476,9 @@ footer {
   cursor: pointer;
 }
 
-/* .footerItems .submitBtn::after {
-  content:'\f30b';
-  font-family: 'Font Awesome 5 Free';
-} */
-
 .footerItems .shareIcons i {
-  float: left;
+  color: #fff;
   margin: 20px 20px 0 0;
-  font-size: 1.5rem;
-  color: #fff
 }
 
 .footerBottom .title  {
@@ -652,10 +653,66 @@ footer {
   font-weight: 700;
 }
 
+.blogPage .blurb {
+  color: #999;
+}
+
 .blogTitle .breadcrumbs {
-  color: #888; 
+  color: #999; 
 }
 
 .blogTitle .breadcrumbs .active {
   color: #000;
+}
+
+.blogInfo {
+  border-bottom: 1px solid #efefef;
+  padding: 60px 0 30px;
+}
+
+.blogInfo .leftInfo, .blogInfo .rightInfo {
+  width: 50%;
+  float: left;
+}
+
+.blogInfo .authorImg {
+  width: 75px;
+  float: left;
+  margin-right: 3rem;
+}
+
+.blogInfo .authorImg img {
+  border-radius: 50%;;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.infoTitle {
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.blogInfo .infoBlock {
+  padding: 16.5px 0;
+}
+
+.rightInfo .infoBlock {
+  float: left;
+  width: calc(100% / 3);
+}
+
+.blogContent {
+  padding: 5.5rem 0 4rem;
+}
+
+.blogContent br {
+  display: block;
+  margin: 10px;
+}
+
+.blogPage .socialShare .title {
+  float: left;
+  margin-right: 10px;
 }
