@@ -645,7 +645,14 @@ footer {
 /* Blog Page */
 
 .blogPage header {
-  background-image: url('../images/blog-1.jpeg');
+  background: #fff url('../images/blog-1.jpeg') no-repeat center;
+  background-size: cover;
+}
+
+.blogPage .authorImg {
+  width: 75px;
+  float: left;
+  margin-right: 3rem;
 }
 
 .blogTitle .title {
@@ -673,12 +680,6 @@ footer {
 .blogInfo .leftInfo, .blogInfo .rightInfo {
   width: 50%;
   float: left;
-}
-
-.blogInfo .authorImg {
-  width: 75px;
-  float: left;
-  margin-right: 3rem;
 }
 
 .blogInfo .authorImg img {
@@ -715,4 +716,70 @@ footer {
 .blogPage .socialShare .title {
   float: left;
   margin-right: 10px;
+}
+
+.blogPage .sectionHeader.title {
+  font-size: 3rem;
+  font-weight: 700;
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 30px;
+} 
+
+.relatedPosts .wrapper {
+  padding-top: 0;
+  padding-bottom: 8rem;
+}
+
+.relatedPosts .blogPosts {
+  padding: 4rem 0 0;
+}
+.relatedPosts .blogPost {
+  width: calc((100% /3) - (60px / 3));
+  float: left;
+  margin-right: 30px;
+}
+
+.relatedPosts .blogPost:last-child {
+  margin-right: 0;
+}
+
+.relatedPosts .date.title {
+  margin: 3rem 0;
+}
+
+.discussion .wrapper {
+  padding-top: 0;
+}
+
+.comment {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.commentsBlock {
+  padding: 3.5rem 0 6rem;
+}
+
+.commentTile {
+  float: left;
+  width: calc(100% - (105px + 5rem));
+  background-color: #f6f6f6;
+  padding: 1.5rem 2.5rem 3rem;
+  position: relative;
+}
+
+.commentTile::before {
+  content: '';
+  display: block;
+  border-width: 10px 10px 10px 25px;
+  border-style: solid;
+  border-color: transparent transparent transparent #f6f6f6;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  position: absolute;
+  left: -25px;
+}
+
+.blogPage .contactForm {
+  padding: 4rem 0 6rem;
 }
