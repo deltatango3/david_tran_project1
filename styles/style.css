@@ -112,8 +112,9 @@ nav .rightNav {
   text-align: right;
 }
 nav .leftNav li, nav .rightNav li {
-  display: inline;
+  display: inline-block;
   margin-right: 25px;
+  padding: 6.5px 0;
 }
 
 nav .rightNav li:last-child {
@@ -638,4 +639,23 @@ footer {
   height: 60vh;
   min-height: 500px;
   display: block;
+}
+
+/* Blog Page */
+
+.blogPage header {
+  background-image: url('../images/blog-1.jpeg');
+}
+
+.blogTitle .title {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.blogTitle .breadcrumbs {
+  color: #888; 
+}
+
+.blogTitle .breadcrumbs .active {
+  color: #000;
 }
