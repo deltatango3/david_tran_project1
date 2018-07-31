@@ -235,7 +235,7 @@ nav .rightNav {
 nav .leftNav li, nav .rightNav li {
   display: inline-block;
   margin-right: 25px;
-  padding: 6.5px 0.25rem;
+  padding: 6.5px 2.5px;
   position: relative;
   overflow: hidden;
 }
@@ -267,7 +267,7 @@ nav li.cart::after {
   position: absolute;
   bottom: 0;
   right: 0;
-  padding: 2px 4px;
+  padding: .2rem .4rem;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -342,7 +342,7 @@ nav li a:hover .line {
   border: solid black;
   border-width: 0 2px 2px 0;
   display: inline-block;
-  padding: 6px;
+  padding: .6rem;
   position: absolute;
   top: 50%;
 }
@@ -404,11 +404,11 @@ nav li a:hover .line {
 }
 
 .feature i.thinIcon {
-  padding: 15px 19px;
+  padding: 1.5rem 1.9rem;
 }
 
 .feature i.mediumIcon {
-  padding: 15px 16px;
+  padding: 1.5rem 1.6rem;
 }
 
 .feature .blurb {
@@ -441,12 +441,12 @@ nav li a:hover .line {
   margin-bottom: 90px;
 }
 .team .row {
-  margin-bottom: 2.5rem;
+  margin-bottom: 25px;
 }
 .team .tile {
-  width: calc(25% - 2.5rem);
+  width: calc(25% - 25px);
   float: left;
-  margin-right: 2.5rem;
+  margin-right: 25px;
   position: relative;
 }
 
@@ -473,7 +473,7 @@ nav li a:hover .line {
 }
 
 .team .tile.largeTile {
-  width: calc(50% - 2.5rem);
+  width: calc(50% - 25px);
   background-color: #f6f6f6;
 }
 
@@ -562,7 +562,7 @@ nav li a:hover .line {
   text-transform: uppercase;
   border: none;
   background-color: #fff;
-  padding: 15px 20px;
+  padding: 1.5rem 2.0rem;
   font-size: 1.2rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
@@ -624,13 +624,13 @@ footer {
 }
 
 .footerItems .textField {
-  padding: 8px 10px;
+  padding: .8rem 1.0rem;
   background-color: #f6f6f6;
 }
 
 .footerItems .textField:focus {
   border: 2px solid #FF4500;
-  padding: 7px 8px;
+  padding: .7rem .8rem;
 }
 
 .footerItems .textField::-webkit-input-placeholder {
@@ -649,7 +649,7 @@ footer {
 }
 
 .footerItems .submitBtn {
-  padding: 10px 15px 9.5px;
+  padding: 1.0rem 1.5rem .95rem;
   background-color: #c3dab7;
   font-family: 'Font Awesome 5 Free';
   font-weight: 600;
@@ -662,7 +662,7 @@ footer {
 }
 
 .footerBottom .title  {
-  color: #fff;
+  color: #9a9a9a;
   text-align: center;
   margin: 0;
   padding: 60px 0;
@@ -672,13 +672,13 @@ footer {
 
 /* Contact PAGE */
 
-.pageContact header {
+.contactPage header {
   background: #fff;
   min-height: 0;
   height: 100%;
 }
 
-.pageContact .hero {
+.contactPage .hero {
   background: #e6e6e6 url(../images/contact-1.jpeg) no-repeat center;
   background-size: cover;
   height: 35vh;
@@ -686,12 +686,12 @@ footer {
   position: relative;
 }
 
-.pageContact .hero .heroHeading {
+.contactPage .hero .heroHeading {
   position: absolute;
   bottom: -30px;
 }
 
-.pageContact .hero .heroHeading::before {
+.contactPage .hero .heroHeading::before {
   content: '';
   background-color: #000;
   width: 28px;
@@ -700,15 +700,15 @@ footer {
   top: -50px;
 }
 
-.pageContact .title {
+.contactPage .title {
   font-weight: 600;
 }
 
-.pageContact .blurb {
+.contactPage .blurb {
   color: #999;
 }
 
-.pageContact .contentBlock {
+.contactPage .contentBlock {
   padding-bottom: 8rem;
 }
 
@@ -743,31 +743,23 @@ footer {
   padding-bottom: 0;
 }
 
-.contactOption .contentBlock.phone::before {
-  content: '\f3cd';
+.contactOption .contentBlock::before {
   display: block;
   font-family: 'Font Awesome 5 Free';
   font-weight: 600;
   font-size: 2.5rem;
   padding-bottom: 20px;
+}
+.contactOption .contentBlock.phone::before {
+  content: '\f3cd';
 }
 
 .contactOption .contentBlock.address::before {
   content: '\f3c5';
-  display: block;
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 600;
-  font-size: 2.5rem;
-  padding-bottom: 20px;
 }
 
 .contactOption .contentBlock.email::before {
   content: '\f0e0';
-  display: block;
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 600;
-  font-size: 2.5rem;
-  padding-bottom: 20px;
 }
 
 .contactUs .wrapper {
@@ -777,7 +769,7 @@ footer {
 .contactForm input {
   border: none;
   width: calc((99% / 3) - 10px);
-  padding-bottom: 15px;
+  padding-bottom: 1.5rem;
   margin-right: 10px;
   border-bottom: 1px solid #efefef;
   font-family: 'Open sans';
@@ -821,7 +813,7 @@ footer {
   border-bottom: 2px solid #ff4500;
 }
 
-.pageContact section.contactUs::after {
+.contactPage section.contactUs::after {
   content: '';
   background: #fff url(../images/contact-2.jpeg) no-repeat center;
   background-size: cover;
@@ -863,7 +855,7 @@ footer {
 
 .blogInfo {
   border-bottom: 1px solid #efefef;
-  padding: 60px 0 30px;
+  padding: 6.0rem 0 3.0rem;
 }
 
 .blogInfo .leftInfo, .blogInfo .rightInfo {
@@ -872,7 +864,7 @@ footer {
 }
 
 .blogInfo .authorImg img {
-  border-radius: 50%;;
+  border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -885,7 +877,7 @@ footer {
 }
 
 .blogInfo .infoBlock {
-  padding: 16.5px 0;
+  padding: 1.65rem 0;
 }
 
 .rightInfo .infoBlock {
@@ -896,11 +888,6 @@ footer {
 .blogContent {
   padding: 5.5rem 0 4rem;
 }
-
-/* .blogContent br {
-  display: block;
-  margin: 10px;
-} */
 
 .blogContent p {
   margin-bottom: 20px;
