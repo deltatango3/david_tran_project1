@@ -117,6 +117,7 @@ input::placeholder, textarea::placeholder {
   transition: transform 600ms ease-out,
   -webkit-transform 600ms ease-out;
 }
+
 /* GENERAL END */
 
 /* ANIMATIONS */
@@ -153,6 +154,40 @@ input::placeholder, textarea::placeholder {
     -ms-transform: translateX(100%)  ;
     -o-transform: translateX(100%)  ;
   }
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    -moz-transform: rotate(359deg);
+    -ms-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+} 
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    -moz-transform: rotate(359deg);
+    -ms-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+} 
 }
 
 /* HEADER START */
@@ -266,6 +301,8 @@ nav li a:hover .line {
   top: -60px;
   left: -70px;
   width: 40%;
+  animation: rotate 40s infinite;
+  -webkit-animation: rotate 40s infinite;
 }
 
 .about .content {
@@ -417,10 +454,22 @@ nav li a:hover .line {
   margin-right: 0;
 }
 
+.team .tile.textOnly {
+  transition: border-width 0.1s linear;
+  -webkit-transition: border-width 0.1s linear;
+  -moz-transition: border-width 0.1s linear;
+  -ms-transition: border-width 0.1s linear;
+  -o-transition: border-width 0.1s linear;
+}
+
 .team .tile.textOnly::after {
   content: '';
   display: block;
   padding-bottom: 100%;
+}
+
+.team .tile.textOnly:hover {
+  border: 2px solid orangered;
 }
 
 .team .tile.largeTile {
@@ -962,4 +1011,4 @@ footer {
 
 .blogPage .contactForm {
   padding: 4rem 0 6rem;
-} 
+}
