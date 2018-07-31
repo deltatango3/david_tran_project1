@@ -227,11 +227,11 @@ nav .rightNav li a:last-child {
   padding-right: 0;
 }
 
-/* nav li.cart::after {
+nav li.cart::after {
   content: '2';
   position: absolute;
   bottom: 0;
-  right: -20%;
+  right: 0;
   padding: 2px 4px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -240,7 +240,7 @@ nav .rightNav li a:last-child {
   -o-border-radius: 50%;
   background-color: #c3dab7;
   font-size: .8rem;
-} */
+}
 
 nav li a:hover {
   font-weight: 600;
@@ -538,6 +538,10 @@ footer {
   margin-bottom: 40px;
 }
 
+.footerItems .blurb {
+  color: #9a9a9a;
+}
+
 .footerItems.center .title {
   text-align: center;
 }
@@ -782,6 +786,7 @@ footer {
 .blogPage header {
   background: #fff url('../images/blog-1.jpeg') no-repeat center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .blogPage .authorImg {
@@ -924,7 +929,7 @@ footer {
   float: left;
   width: calc(100% - (105px + 5rem));
   background-color: #f6f6f6;
-  padding: 1.5rem 2.5rem 3rem;
+  padding: 2rem 2.5rem 3rem;
   position: relative;
 }
 
@@ -938,6 +943,21 @@ footer {
           transform: rotate(180deg);
   position: absolute;
   left: -25px;
+}
+
+.commenterName {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+.commenterName a.reply {
+  color: #809079;
+  font-style: italic;
+  text-transform: initial;
+}
+
+.commentBlurb {
+  margin-bottom: 10px;
 }
 
 .blogPage .contactForm {
