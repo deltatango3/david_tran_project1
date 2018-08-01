@@ -180,9 +180,9 @@
         </div>
         <div class="commentFormBlock">
           <h3 class="sectionHeader title">Leave a comment</h3>
-          <form class="contactForm" action="">
-            <input type="text" placeholder="Enter your name..."><input type="text" placeholder="youremail@domain.com"><input type="text" placeholder="Subject (Optional)">
-            <textarea name="message" id="contactFormMessage" cols="30" rows="10" placeholder="Here goes your message"></textarea>
+          <form class="contactForm commentForm" action="POST">
+            <input type="text" name="nameComment" class="nameComment" id="nameComment" placeholder="Enter your name..."><input type="text" placeholder="youremail@domain.com" name="emailComment" class="emailComment" id="emailComment"><input type="text" name="subjectComment" class="subjectComment" id="subjectComment" placeholder="Subject (Optional)">
+            <textarea name="messageComment" id="messageComment" class="messageComment" cols="30" rows="10" placeholder="Here goes your message"></textarea>
             <input type="submit" class="formSubmit submitBtn" value="Submit Comment">
           </form>
         </div>
@@ -230,7 +230,9 @@
         <div class="footerItems right">
           <h3 class="title">Subscribe Now</h3>
           <p class="blurb">Signup for emails and notifications below.</p>
-          <input class="textField" type="text" placeholder="Enter your email"><input type="submit" class="submitBtn" value="&#xf30b">
+          <form action="POST">
+            <input class="textField email" name="email" type="text" placeholder="Enter your email"><input type="submit" class="submitBtn" value="&#xf30b">
+          </form>
         </div>
       </div>
     </div> 

@@ -170,7 +170,7 @@ input::placeholder, textarea::placeholder {
     -moz-transform: rotate(359deg);
     -ms-transform: rotate(359deg);
     -o-transform: rotate(359deg);
-} 
+  } 
 }
 
 @keyframes rotate {
@@ -187,7 +187,7 @@ input::placeholder, textarea::placeholder {
     -moz-transform: rotate(359deg);
     -ms-transform: rotate(359deg);
     -o-transform: rotate(359deg);
-} 
+  } 
 }
 
 /* HEADER START */
@@ -209,6 +209,7 @@ nav.wrapper {
   text-transform: uppercase;
   font-size: 1.2rem;
 }
+
 nav .mainHeading {
   width: 33.333%;
   float: left;
@@ -217,21 +218,26 @@ nav .mainHeading {
   font-size: 2.5rem;
   margin: 0;
 }
+
 nav .navIcon {
   width: 16px;
 }
+
 nav .navIcon img {
   width: inherit;
 }
+
 nav .leftNav {
   width: 33.333%;
   float: left;
 }
+
 nav .rightNav {
   width: 33.333%;
   float: left;
   text-align: right;
 }
+
 nav .leftNav li, nav .rightNav li {
   display: inline-block;
   margin-right: 25px;
@@ -277,9 +283,9 @@ nav li.cart::after {
   font-size: .8rem;
 }
 
-nav li a:hover {
+/* nav li a:hover {
   font-weight: 600;
-}
+} */
 
 nav li a:hover .line {
   animation: lineIn 400ms 1;
@@ -290,6 +296,7 @@ nav li a:hover .line {
 .about {
   background-color: #c3dab7;
 }
+
 .about .imgContainer {
   width: 400px;
   margin: 0 auto;
@@ -355,6 +362,7 @@ nav li a:hover .line {
   -o-transform: rotate(135deg) translateY(-50%);
   left: 10%;
 }
+
 .arrow.right {
   transform: rotate(-45deg) translateY(-50%);
   -webkit-transform: rotate(-45deg) translateY(-50%);
@@ -437,12 +445,15 @@ nav li a:hover .line {
   -ms-transform: translateX(-50%) rotate(90deg);
   -o-transform: translateX(-50%) rotate(90deg);
 }
+
 .team .sectionHeading {
   margin-bottom: 90px;
 }
+
 .team .row {
   margin-bottom: 25px;
 }
+
 .team .tile {
   width: calc(25% - 25px);
   float: left;
@@ -468,7 +479,7 @@ nav li a:hover .line {
   padding-bottom: 100%;
 }
 
-.team .tile.textOnly:hover {
+.team .tile.textOnly:hover, .team .tile.textOnly:focus {
   border: 2px solid orangered;
 }
 
@@ -517,11 +528,13 @@ nav li a:hover .line {
   padding: 0;
   max-width: none;
 }
+
 .contact .contentBlockContainer {
   width: 50%;
   float: left;
   position: relative;
 }
+
 .contact .contentBlockContainer::after {
   content: '';
   display: block;
@@ -531,6 +544,7 @@ nav li a:hover .line {
 .contact .contentBlockContainer.left {
   background-color: #c3dab7;
 }
+
 .contact .contentBlockContainer.right {
   background: dodgerblue url(../images/home-10.jpeg) no-repeat center;
   background-size: cover;
@@ -568,7 +582,17 @@ nav li a:hover .line {
   font-weight: 600;
   letter-spacing: 1px;
   cursor: pointer;
+  transition: all 300ms ease;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
 } 
+
+.contact .cta:hover {
+  background-color: orangered;
+  color: #fff;
+}
 
 /* Footer Section */
 footer {
@@ -578,6 +602,7 @@ footer {
   color: #fff;
   border-bottom: 2px solid #666;
 }
+
 .footerItems {
   width: calc(100% / 3);
   float: left;
@@ -715,9 +740,11 @@ footer {
 .contactDetails .contentBlock.sectionHeader .title {
   margin-bottom: 25px 
 }
+
 .contactDetails .contactOptions {
   position: relative;
 }
+
 .contactDetails .contactOption {
   width: calc(100% / 3);
   float: left;
@@ -750,6 +777,7 @@ footer {
   font-size: 2.5rem;
   padding-bottom: 20px;
 }
+
 .contactOption .contentBlock.phone::before {
   content: '\f3cd';
 }
@@ -809,7 +837,7 @@ footer {
   cursor: pointer;
 }
 
-.contactForm .formSubmit.submitBtn:active {
+.contactForm .formSubmit.submitBtn:hover {
   border-bottom: 2px solid #ff4500;
 }
 
@@ -841,12 +869,8 @@ footer {
   font-weight: 700;
 }
 
-.blogPage .blurb {
+.blogPage .blurb, .blogTitle .breadcrumbs {
   color: #999;
-}
-
-.blogTitle .breadcrumbs {
-  color: #999; 
 }
 
 .blogTitle .breadcrumbs .active {
@@ -906,13 +930,13 @@ footer {
 } 
 
 .relatedPosts .wrapper {
-  padding-top: 0;
-  padding-bottom: 8rem;
+  padding: 0 0 8rem 0;
 }
 
 .relatedPosts .blogPosts {
   padding: 4rem 0 0;
 }
+
 .relatedPosts .blogPost {
   width: calc((100% /3) - (60px / 3));
   float: left;
@@ -954,7 +978,7 @@ footer {
 
 .comment {
   width: 100%;
-  margin-bottom: 3rem;
+  margin-bottom: 30px;
 }
 
 .commentsBlock {

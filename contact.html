@@ -112,9 +112,9 @@
           <h2 class="title">Get in touch with us</h2>
           <p class="blurb">If you have any questions, please don't hesitate to send us a message.</p>
         </div>
-        <form class="contactForm" action="">
-          <input type="text" placeholder="Enter your name..."><input type="text" placeholder="youremail@domain.com"><input type="text" placeholder="Subject (Optional)">
-          <textarea name="message" id="contactFormMessage" cols="30" rows="10" placeholder="Here goes your message"></textarea>
+        <form class="contactForm" action="POST">
+          <input type="text" name="nameContact" id="nameContact" class="nameContact" placeholder="Enter your name..."><input type="text" placeholder="youremail@domain.com"><input name="subjectContact" id="subjectContact" class="subjectContact" type="text" placeholder="Subject (Optional)">
+          <textarea name="messageContact" id="messageContact" class="messageContact" cols="30" rows="10" placeholder="Here goes your message"></textarea>
           <input type="submit" class="formSubmit submitBtn" value="Send Message">
         </form>
       </div>
@@ -161,7 +161,9 @@
         <div class="footerItems right">
           <h3 class="title">Subscribe Now</h3>
           <p class="blurb">Signup for emails and notifications below.</p>
-          <input class="textField" type="text" placeholder="Enter your email"><input type="submit" class="submitBtn" value="&#xf30b">
+          <form action="POST">
+            <input class="textField email" name="email" type="text" placeholder="Enter your email"><input type="submit" class="submitBtn" value="&#xf30b">
+          </form>
         </div>
       </div>
     </div> 
